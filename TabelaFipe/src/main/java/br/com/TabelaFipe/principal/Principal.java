@@ -48,7 +48,7 @@ public class Principal {
                 .sorted(Comparator.comparing(Dados::codigo))
                 .forEach(System.out::println);
 
-        System.out.println("Informe o código da marca para consulta: ");
+        System.out.println("\nInforme o código da marca para consulta: ");
         var codigoMarca = leitura.nextLine();
 
         endereco = endereco + "/" + codigoMarca + "/modelos";
@@ -70,7 +70,7 @@ public class Principal {
         System.out.println("\nModelos filtrados");
         modelosFiltrados.forEach(System.out::println);
 
-        System.out.println("Digite por favor o código do modelo para buscar os valores de avaliação: ");
+        System.out.println("\nDigite por favor o código do modelo para buscar os valores de avaliação: ");
         var codigoModelo = leitura.nextLine();
 
         endereco = endereco + "/" + codigoModelo + "/anos";
